@@ -6,4 +6,5 @@ module.exports = (app) => {
   app.post('/api/todo', todoController.create)
   app.get('/api/todos', todoController.list)
   app.post('/api/todo/:todoId/items', todoItemController.create)
+  app.get('/api/todo/:todoId', todoController.retreive)
 }
